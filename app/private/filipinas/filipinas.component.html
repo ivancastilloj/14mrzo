@@ -1,0 +1,68 @@
+
+		<div  id="fh5co-tours" class="fh5co-section-gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+              <h3>Book A Flight</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+          </div>
+
+          <div *ngFor="let model of coursesObservable | async" class="card mb-4">
+              <img class="card-img-top" src='{{model.foto}}' alt="Card image cap">
+              <div class="card-body">
+                <h2 class="card-title">{{ model.nombre }}</h2>
+                <p class="card-text">{{  model.descripcion }}</p>
+              
+                  <!-- <div id="collapseExample" [ngbCollapse]="isCollapsed"> -->
+                    <div class="card">
+                      <div class="card-body">
+                          {{  model.precio}}
+                      </div>
+                    </div>
+                  </div> 
+              <!-- </div> -->
+              <div class="card-footer text-muted">
+                Posted on {{ model.fecha }}
+               
+              </div>
+            </div>
+  
+   
+
+
+
+          <div class="row row-bottom-padded-md">
+            <div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+              <div href="#"><img src="../../assets/images/place-1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+                <div class="desc">
+                  <span></span>
+                  <h3>New York</h3>
+                  <span>3 nights</span>
+                  <span class="price">$1,000</span>
+                  <a class="btn btn-primary btn-outline" href="#">Book Now <i class="icon-arrow-right22"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+              <div href="#"><img src="../../assets/images/place-2.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+                <div class="desc">
+                  <span></span>
+                  <h3>Philippines</h3>
+                  <span>4 nights</span>
+                  <span class="price">$1,000</span>
+                  <a class="btn btn-primary btn-outline" href="#">Book Now <i class="icon-arrow-right22"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+              <div href="#"><img src="../../assets/images/place-3.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+                <div class="desc">
+                  <span></span>
+                  <h3>Hongkong</h3>
+                  <span>2 nights</span>
+                  <span class="price">$1,000</span>
+                  <a class="btn btn-primary btn-outline" href="#">Book Now <i class="icon-arrow-right22"></i></a>
+                </div>
+              </div>
+            </div>
